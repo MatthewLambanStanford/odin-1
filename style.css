@@ -1,0 +1,9 @@
+.top {
+    display: flex;
+    background-color: aqua;
+}
+
+.top-items {
+    display: flex;
+}
+
