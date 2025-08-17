@@ -1,9 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f9f9f9; /* page background */
+  }
+
 .top {
     display: flex;
-    background-color: aqua;
+    background-color: #1f2937;
+    font-family: "Roboto";
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* top-bottom, left-right */
 }
 
-.top-items {
+.top h1 {
+    margin: 0; /* remove default h1 margin */
+    font-size: 1.5rem;
+}
+
+.middle-container {
+    background-color: #1f2937; 
+}
+.middle { /* flex container */
     display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* space between paragraph and image */
+    align-items: center;            /* vertically center content */
+        /* section background */
+    padding: 2rem 2rem;             /* space inside section */
+    gap: 2rem;                      /* space between paragraph and image */
+    max-width: 1200px;              /* prevent stretching too far */
+    margin: 0 auto;  
+    
 }
 
+.paragraph {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+.paragraph h2 {
+    margin-bottom: .05rem;
+}
+.paragraph p {
+    color: grey;
+    margin-bottom: .5rem;
+    line-height: 1.6;
+}
+
+
+.info-img-1 {
+    width: 200px;
+    border-radius: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header {
+    display: flex;
+    color: white;
+    font-size: 10px;
+}
+
+
+nav { /* flex container */
+    display: flex;
+    gap: 3px;
+}
+
+a {
+    text-decoration: none; /* removes underline */
+    color: white;
+}
+
+
+.title {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    margin: 1.125em;
+
+}
+
+.info img {
+    width: 100%;                   /* fills card width */
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;         /* gap between image and text */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 1rem; 
+    gap: 1rem; 
+    
+}
+
+.info {
+    max-width: 200px;
+    text-align: center;
+    margin: 1.125em;
+}
+  
+  
